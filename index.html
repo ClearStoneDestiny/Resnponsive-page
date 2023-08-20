@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie rekrutacyjne</title>
+
+    <!--Bootstrap link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+
+    <!--Boxicons link-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--Custom CSS link-->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <!--Navigation-->
+    <section class="navigation-section sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-5" href="index.html"><img src="icons/giarddesign.svg" alt="Logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!--Navigation list-->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-2 mb-2 mb-lg-0 ms-auto">
+              
+              <li class="nav-item dropdown me-2">
+                <a class="nav-link dropdown-toggle no-hover" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Oferta
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Projekty</a></li>
+                  <li><a class="dropdown-item" href="#">Wizualizacje</a></li>
+                  <li><a class="dropdown-item" href="#">Realizacje</a></li>
+                </ul>
+              </li>
+              
+              <li class="nav-item me-2">
+                <a class="nav-link active" href="#">O firmie</a>
+              </li>
+              <li class="nav-item me-2">
+                <a class="nav-link active" href="#">Realizacje</a>
+              </li>
+              <li class="nav-item me-2">
+                <a class="nav-link active" href="#">Kontakt</a>
+              </li>
+            </ul>
+
+            <!--Search bar-->
+            <div id="searchToggle" class="search-toggle me-5">
+              <img id="searchIcon" src="icons/search-icon.svg" alt="Search Icon">
+            </div>
+              <form id="searchForm" class="d-none">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!--Hero section-->
+    <section class="hero">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h4>Nowoczesna <br> aranżacja <br>
+                Twojego ogrodu
+            </h4>
+            <h5>Marka GiardDesign to wieloletnie doświadczenie i wysoka <br> estetyka realizacji. 
+              Oferujemy kompleksowy zakres usług <br> z indywidualnym podejściem do każdego projektu.
+            </h5>
+            <div class="hero-button-container">
+                <a href="#"><button>Skontaktuj się z nami</button></a>
+                <a href="#"><button class="other-btn">Zobacz nasze realizacje<i class='bx bx-down-arrow-alt'></i></button></a>
+            </div>
+          </div>
+          
+           <img id="hero-image" src="" alt="" class="image">
+            <div class="image-buttons">
+                <button id="prevButton"><img src="icons/left-arrow.svg" alt=""></button>
+                <button id="nextButton"><img src="icons/right-arrow.svg" alt=""></button>
+            </div>
+          
+        </div>
+    </section>
+      
+    <!--Offer section-->
+    <section class="text-section">
+
+        <div class="container">
+          <div class="row about-p">
+            <div class="col-lg-6 text-spacing">
+              <h6>Oferta</h6>
+              <h4>Działamy <i>kompleksowo</i></h4>
+              <h5>Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody  
+                przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy  
+                w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem. 
+              </h5>
+            </div>
+          </div>
+
+          <!--Cards-->
+          <div class="row mt-4">
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
+                  <img src="icons/pencil.svg" alt="Pencil icon">
+                  <h4 class="card-title">Projekty</h4>
+                  <h5 class="card-text">Zaprojektujemy Twój ogród w nowoczesnym stylu i z 
+                    najlepszym wykorzystaniem istniejącej przestrzeni.
+                  </h5>
+                  <h5> <a href="#">Dowiedz się więcej <i class='bx bx-right-arrow-alt'></i></a> </h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
+                    <img src="icons/eye.svg" class="eye" alt="Eye icon">
+                  <h4 class="card-title">Wizualizacje</h4>
+                  <h5 class="card-text">Przedstawimy Ci projekty koncepcyjne w postaci 
+                    wirtualnego spaceru animowanego w technologii 3D.
+                  </h5>
+                  <h5> <a href="#">Dowiedz się więcej <i class='bx bx-right-arrow-alt'></i></a> </h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body">
+                    <img src="icons/magic.svg" alt="Magic icon">
+                  <h4 class="card-title">Realizacje</h4>
+                  <h5 class="card-text">Zrealizujemy Twoje marzenie przy użyciu najnowszych 
+                    rozwiązań i zaawansowanych technologii.
+                  </h5>
+                  <h5> <a href="#">Zobacz nasze realizacje <i class='bx bx-right-arrow-alt'></i></a> </h5>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section> 
+
+    <!--O firme section-->
+    <section class="firma">
+        <div class="firma-content">
+            <img src="img/firma-img.png" alt="Image must be here" class="image">
+            <div class="firma-text">
+              <h5>O firmie</h5>
+              <h4>Tworzymy <br>z pasją</h4>
+              <p>Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą <br> wykwalifikowani projektanci oraz architekci, 
+                których zadaniem jest <br> rozpoznanie i realizacja potrzeb każdego Klienta. Nasza <br> specjalizacja to przestrzenie nowoczesne, 
+                które charakteryzuje <br> minimalizm, geometria i elegancka prostota. Tworzymy ogrody <br> małoobsługowe, dostosowane do współczesnego trybu życia.
+              </p>
+              <div class="button-container">
+                  <a href="#"><button>Poznaj nas bliżej <img src="icons/side-arrow.svg" alt=""></button></a> 
+              </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--Realizacje section-->
+    <section class="realization-section">
+      <div class="realization-text">
+        <h5>Realizacje</h5>
+        <h4>Nasze <i>projekty</i></h4>
+      </div>
+
+      <!--Masonry Gallery-->
+      <div class="mason-container">
+        <div class="photo-gallery">
+          
+          <!--First column-->
+          <div class="column">
+
+            <div class="photo">
+              <a href="https://images.pexels.com/photos/2565222/pexels-photo-2565222.jpeg?auto=compress&cs=tinysrgb&w=600" target="_blank">
+                <img src="https://images.pexels.com/photos/2565222/pexels-photo-2565222.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+              </a>
+            </div>
+
+            <div class="photo">
+              <a href="https://images.pexels.com/photos/5624229/pexels-photo-5624229.jpeg?auto=compress&cs=tinysrgb&w=600" target="_blank">
+                <img src="https://images.pexels.com/photos/5624229/pexels-photo-5624229.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+              </a>
+            </div>
+
+            <div class="photo">
+              <a href="https://images.pexels.com/photos/5727617/pexels-photo-5727617.jpeg?auto=compress&cs=tinysrgb&w=600" target="_blank">
+                <img src="https://images.pexels.com/photos/5727617/pexels-photo-5727617.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+              </a>
+            </div>
+
+            <div class="photo">
+              <a href="https://images.pexels.com/photos/1830933/pexels-photo-1830933.jpeg?auto=compress&cs=tinysrgb&w=600" target="_blank">
+                <img src="https://images.pexels.com/photos/1830933/pexels-photo-1830933.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+              </a>
+            </div>
+
+          </div>
+
+          <!--Second column-->
+          <div class="column">
+
+            <div class="photo">
+              <a href="https://images.pexels.com/photos/5529586/pexels-photo-5529586.jpeg?auto=compress&cs=tinysrgb&w=600" target="_blank">
+                <img src="https://images.pexels.com/photos/5529586/pexels-photo-5529586.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+              </a>
+            </div>
+
+            <div class="photo">
+              <a href="https://images.pexels.com/photos/5528986/pexels-photo-5528986.jpeg?auto=compress&cs=tinysrgb&w=600" target="_blank">
+                <img src="https://images.pexels.com/photos/5528986/pexels-photo-5528986.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+              </a>
+            </div>
+
+            <div class="photo">
+              <a href="https://images.pexels.com/photos/5561300/pexels-photo-5561300.jpeg?auto=compress&cs=tinysrgb&w=600" target="_blank">
+                <img src="https://images.pexels.com/photos/5561300/pexels-photo-5561300.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+              </a>
+            </div>
+
+            <div class="photo">
+              <a href="https://images.pexels.com/photos/1105019/pexels-photo-1105019.jpeg?auto=compress&cs=tinysrgb&w=600" target="_blank">
+                <img src="https://images.pexels.com/photos/1105019/pexels-photo-1105019.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+              </a>
+            </div>
+
+            <div class="photo">
+              <a href="https://images.pexels.com/photos/5473050/pexels-photo-5473050.jpeg?auto=compress&cs=tinysrgb&w=600" target="_blank">
+                <img src="https://images.pexels.com/photos/5473050/pexels-photo-5473050.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+              </a>
+            </div>
+
+          </div>
+
+          <!--Third column-->
+          <div class="column">
+
+            <div class="photo">
+              <a href="https://images.pexels.com/photos/6264463/pexels-photo-6264463.jpeg?auto=compress&cs=tinysrgb&w=600" target="_blank">
+                <img src="https://images.pexels.com/photos/6264463/pexels-photo-6264463.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+              </a>
+            </div>
+
+            <div class="photo">
+              <a href="https://images.pexels.com/photos/4894614/pexels-photo-4894614.jpeg?auto=compress&cs=tinysrgb&w=600" target="_blank">
+                <img src="https://images.pexels.com/photos/4894614/pexels-photo-4894614.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+              </a>
+            </div>
+
+            <div class="photo">
+              <a href="https://images.pexels.com/photos/4501113/pexels-photo-4501113.jpeg?auto=compress&cs=tinysrgb&w=600" target="_blank">
+                <img src="https://images.pexels.com/photos/4501113/pexels-photo-4501113.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+              </a>
+            </div>
+
+            <div class="photo">
+              <a href="https://images.pexels.com/photos/2523644/pexels-photo-2523644.jpeg?auto=compress&cs=tinysrgb&w=600" target="_blank">
+               <img src="https://images.pexels.com/photos/2523644/pexels-photo-2523644.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+              </a>
+            </div>
+
+            <div class="photo">
+              <a href="https://images.pexels.com/photos/2987081/pexels-photo-2987081.jpeg?auto=compress&cs=tinysrgb&w=600" target="_blank">
+                <img src="https://images.pexels.com/photos/2987081/pexels-photo-2987081.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+       
+        <div class="btn-container">
+          <button id="expand-button">Rozwiń <i class='bx bx-down-arrow-alt' ></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!--Instagram section-->
+    <section class="centered-section">
+      <div class="container">
+        <div class="centered-box">
+          <div class="text-and-btn-container">
+            <h4>Zostańmy w kontakcie! <br> Znajdziesz nas na <i>Instagramie</i>.</h4>
+            <div class="p-and-button">
+              <h5 class="mb-4">Śledź nasze <br>
+               najnowsze realizacje!</h5>
+              <a href="https://www.instagram.com/?hl=en" target="_blank"><button>Instagram</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
+
+    <!--Footer section-->
+    <section class="footer">
+    
+      <div class="footer-upper">
+        <a href="index.html"><img src="icons/white_giarddesign.svg" alt="Image" class="me-5"></a>
+        <div class="d-flex align-items-center" id="footer-upper-btn">
+          <p class="mb-0 me-5">Daj znać, co możemy dla Ciebie zrobić!</p>
+          <button class="mb-0">Skontaktuj się z nami</button>
+        </div>
+      </div>
+
+      <div class="footer-contacts">
+        <div class="contacts">
+          <ul class="list-inline d-flex mb-0 ml-5">   
+            <a href="https://web.telegram.org/" target="_blank"><li class="list-inline-item kontakt">Kontakt</li></a>
+            <a href="https://www.instagram.com/?hl=en" target="_blank"><li class="list-inline-item insta">Instagram</li></a>
+            <a href="https://www.facebook.com/" target="_blank"><li class="list-inline-item facebook">Facebook</li></a>
+            <a href="https://www.linkedin.com/" target="_blank"><li class="list-inline-item linkedid">LinkedIn</li></a>
+          </ul>
+        </div>
+        <div class="d-flex align-items-center">
+          <p class="mb-0 me-5">000-000-000</p>
+          <a href="mailto:giarddesign@kontakt.pl" target="_blank"><p class="mb-0 mail">giarddesign@kontakt.pl</p></a>
+        </div>
+      </div>
+
+      <div class="footer-copywright">
+        <p class="mb-0" id="copywright">Prawa zastrzeżone © 2022</p>
+        <div class="d-flex align-items-center">
+          <p class="mb-0">made by</p>
+          <img src="icons/ad-respect_logo.svg" alt="Image" class="mb-0" >
+        </div>
+      </div>
+    
+    </section>
+
+    <!--Custom JS link-->
+    <script src="sripts/script.js"></script> 
+
+    <!--Bootstrap JS link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
